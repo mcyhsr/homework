@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link href="calcss.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="calculator">
+    <!--显示屏-->
+    <div class="screen"><p id="rel"></p></div>
+    <div class="buttonBox">
+        <!--第一行按钮-->
+        <div class="row1">
+            <button class="zero" id="btn0" onclick="zero()">C</button>
+            <button class="delate" id="btn1" onclick="back()">Del</button>
+            <button class="divide" id="btn2" onclick="divide()">÷</button>
+            <button class="multiply" id="btn3" onclick="multiply()">×</button>
+        </div>
+        <!--第二行按钮-->
+        <div class="row2">
+            <button class="seven" id="btn4" onclick="num(7)">7</button>
+            <button class="eight" id="btn5" onclick="num(8)">8</button>
+            <button class="nine" id="btn6"  onclick="num(9)">9</button>
+            <button class="plus" id="btn7" onclick="plus()">+</button>
+        </div>
+        <!--第三行按钮-->
+        <div class="row3">
+            <button class="four" id="btn8" onclick="num(4)">4</button>
+            <button class="five" id="btn9" onclick="num(5)">5</button>
+            <button class="six" id="btn10" onclick="num(6)">6</button>
+            <button class="minus" id="btn11" onclick="minus()">-</button>
+        </div>
+        <div class="left">
+            <!--第四行按钮-->
+            <div class="row4">
+                <button class="one" id="btn12" onclick="num(1)">1</button>
+                <button class="two" id="btn13" onclick="num(2)">2</button>
+                <button class="three" id="btn14" onclick="num(3)">3</button>
+            </div>
+            <!--第五行按钮-->
+            <div class="row5">
+                <button class="zero1" id="btn15" onclick="num(0)">0</button>
+                <button class="point" id="btn16" onclick="dot()">.</button>
+            </div>
+        </div>
+        <div class="right">
+            <button class="result" id="btn17" onclick="rel()">=</button>
+        </div>
+        <div class="row6">
+            <button class="sin" id="btn18" onclick="sin()">sin</button>
+            <button class="cos" id="btn19" onclick="cos()">cos</button>
+            <button class="tan" id="btn20" onclick="tan()">tan</button>
+            <button class="sqrt" id="btn21" onclick="sqrt()">√</button>
+        </div>
+</div>
+</div>
+<script src="calJs.js"></script>
+</body>
+</html>
